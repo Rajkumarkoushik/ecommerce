@@ -1,0 +1,1088 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+1. Head nav section. 
+2. main nav section.
+3. Navigation section.
+4. Transport section.
+5. Carts cards section.
+6. Black friday section.
+7. Home banner section.
+8. Deals of the day section.
+9. Home electronics section.
+10. Home final reduction card section.
+11. Home off section.
+12. Footer section.
+13. Home login form section.
+14. Home pop up section.
+15. Back to top section.
+16. Home cart section.
+17.Home featured images.
+*/
+
+:root{
+    --bg-color-1: #fff;
+    --bg-color-2: #f6f9fc;
+    --bg-color-3: #d23f57;
+    --bg-color-4: #bfc3ca;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f6f6f6 !important;
+}
+p{
+    margin-bottom: 0px !important;
+    font-size: 14px;
+}
+ul,ol{
+    padding: 0!important;
+}
+body h6{
+    font-size: 17px;
+    font-weight: 500;
+}
+body h4{
+    font-size: 23px;
+    font-weight: 500;
+}
+.pt20{
+    padding: 20px 0;
+}
+body li{
+    font-size: 13px;
+}
+body a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+}
+body a:hover{
+    color: #000;
+}
+body li{
+    list-style: none;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 4px 0;
+}
+body li:hover{
+    color: var(--bg-color-3);
+}
+.pt50{
+    padding-top: 50px;
+}
+.pb50{
+    padding-bottom: 50px;
+}
+body span{
+    color: var(--bg-color-3);
+    font-weight: 700;
+    line-height: 25px;
+}
+body input{
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    outline: none;
+    padding-left: 20px;
+    border: 1px solid var(--bg-color-4);
+    font-size: 13px;
+}
+body i{
+    cursor: pointer;
+}
+.gap-10{
+    gap: 10px;
+}
+/* 1. Head nav section starts */
+.main-head-social i{
+   font-size: 16px;
+   color: var(--bg-color-1);
+}
+.main-head-social{
+    gap: 10px;
+}
+.main-head-social button{
+    background: transparent;
+    display: none;
+}
+.head-nav-sec{
+    align-items: center;
+}
+.head-main{
+    background-color: #2b3445;
+    padding: 5px 0;
+    align-items: center;
+}
+.head-nav-start button{
+    padding: 0px 17px;
+    border-radius: 30px;
+    background-color: var(--bg-color-3);
+    color: var(--bg-color-1);
+    font-size: 13px;
+    font-weight: 600;
+    border: none;
+}
+.head-nav-start{
+    gap: 20px;
+    color: var(--bg-color-1);
+    align-items: center;;
+}
+/* Head nav section ends */
+
+/* 2. Main nav section starts */
+.form-search::before{
+    font-weight: 900;
+    position: absolute;
+    font-family: 'Font Awesome 5 Free';
+    content: '\f002';
+    font-size: 17px;
+    top :14px;
+    left:13px;
+    color: var(--bg-color-4);
+}
+.form-search input{
+    padding-left: 37px;
+    font-size: 14px;
+    width: 700px;
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid var(--bg-color-4);
+}
+.form-search input:hover{
+    border: 1px solid var(--bg-color-3);
+}
+.nav-search{
+    position: relative;
+}
+.nav-selection button{
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    border-radius: 0px 30px 30px 0;
+    width: 160px;
+    border: none;
+    background-color: var(--bg-color-2);
+    border-left: 1px solid #e3cccc;
+    padding: 11px 0px;
+}
+.nav-selection button::after{
+    font-weight: 900;
+    font-family: 'Font Awesome 5 Free';
+    content: '\f107';
+    font-size: 17px;
+    padding-left: 10px;
+}
+.main-nav-icons i{
+    font-size: 17px;
+    padding: 18px 20px;
+    border-radius: 50%;
+    background-color: var(--bg-color-2);
+    margin: 0 5px;
+    cursor: pointer;
+}
+.main-nav-icons{
+    position: relative;
+}
+.main-nav-icons span{
+    background: var(--bg-color-3);
+    padding: 1px 8px;
+    border-radius: 50%;
+    color: #fff;
+    position: absolute;
+    top: 0px;
+}
+.head-links li{
+    list-style: none;
+    padding: 5px 35px 5px 35px;
+    text-align: start;
+}
+.head-links {
+    position: absolute;
+    top: 50px;
+    left: 0px;
+    background-color: var(--bg-color-1);
+    box-shadow: 0px 0px 2px 1px var(--bg-color-4);
+    padding-left: 0px;
+}
+/* .head-links-show{
+    visibility: visible;
+} */
+.head-links li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 400;
+}
+.head-links li:hover{
+    width: 100%;
+    background-color: var(--bg-color-4);
+}
+    
+/* 2. Main nav section ends */
+
+/* 3. Main nav section starts */
+.nav-button button {
+    padding: 7px 130px 7px 30px;
+    position: relative;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--bg-color-4);
+    background-color: var(--bg-color-2);
+    border: none;
+}
+.nav-button button::after{
+    content: ">";
+    font-size: 20px;
+    font-weight: 800;
+    position: absolute;
+    right: 10px;
+    top: 3px;
+    color: #000;
+}
+.nav-links li img{
+    height: 20px;
+    width: 20px;
+}
+.nav-links li, .navigation-links li{
+    list-style: none;
+    padding: 5px 0;
+}
+.navigation-links li a:hover{
+    color: var(--bg-color-3);
+}
+.nav-links li a, .navigation-links li a{
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-size: 14px;
+}
+.nav-links{
+    background-color: var(--bg-color-1);
+    width: 230px;
+    position: absolute;
+    z-index: +99;
+}
+.navigation-links{
+    gap: 37px;
+}
+.navigation-links li i{
+    padding-left: 3px;
+    color: var(--bg-color-4);
+}
+.navigation{
+    background-color: #fff;
+    position: sticky;
+    top: -2px;
+    z-index: +9999;
+}
+.navigation-sec{
+    background-color: #fff;
+}
+.nav-home{
+    position: relative;
+}
+.nav-sub-links{
+    position: absolute;
+    z-index: +9;
+    background-color: #fff;
+    top: 0px;
+    left: -52px;
+    width: 200px;
+    transform: scale(0);
+    margin-top: 48px;
+    box-shadow: 0px 0px 4px 0px #000;
+    transition: all 0.4s ease-in-out;
+    padding: 10px 0 !important;
+}
+.nav-home:hover .nav-sub-links{
+    transform: scale(1);
+}
+.nav-sub-links li a{
+    font-size: 15px;
+    font-weight: 500;
+    color: #535456;
+    padding-left: 30px;
+}
+.nav-sub-links li a:hover{
+    color: var(--bg-color-3);
+}
+.home-mega-menu{
+    display: flex;
+    width: 900px;
+    justify-content: space-evenly;
+    gap: 30px;
+    position: absolute;
+    left: -400px;
+}
+.nav-sub-links h6{
+    padding: 10px 0px 10px 30px;
+}
+.mega-link-first{
+    background-color: var(--bg-color-2);
+}
+.mega-link-first li{
+    padding-right: 60px;
+}
+/* 3. Main nav section ends */
+
+/* 4. Transport section starts */
+.transport-main i{
+    font-size: 35px;
+    margin: 0 20px 0 55px;
+}
+.transport-section{
+    background-color: var(--bg-color-1);
+    padding: 40px 0;
+    margin: 30px 0;
+}
+.transport-main{
+    border-right: 2px solid var(--bg-color-4);
+}
+
+
+/* 4. Transport section ends */
+
+/* 5. Carts cards section starts */
+.carts-card{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+.carts-card h5{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 0px;
+    text-align: center;
+    background-color: rgba(255,255,255, .67);
+    padding: 7px 0;
+}
+.carts-card img{
+    border-radius: 6px;
+    width: 175px;
+}
+.carts-card:hover h5{
+    background: #222;
+    color: var(--bg-color-1);
+    transition: all 0.3s; 
+}
+/* 5. Carts cards section ends */
+
+/* 6. Black friday section starts */
+.black-friday{
+    background-color: #e0e0e0;
+    padding: 30px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    width: 400px;
+    border-radius: 0px 100px 0px 0px;
+}
+.friday-scrolling {
+    overflow: hidden;
+    position: relative;
+  }
+  .friday-scrolling::before{
+    inset: 5px;
+    z-index: 3;
+    content: '';
+    position: absolute;
+    border: 1px dashed #fff;
+    width: 100%;
+    border-left: none;
+  }
+  .friday-sale{
+    background-color: #434343;
+  }
+  .scroll-text {
+    white-space: nowrap;
+    overflow: hidden;
+    animation: scroll-text 25s linear infinite;
+  }
+  .scroll-text p {
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 20px 0;
+    color: var(--bg-color-1);
+  }
+  @keyframes scroll-text {
+    0% {
+      transform: translate3d(100%, 0, 0);
+    }
+    100% {
+      transform: translate3d(-100%, 0, 0);
+    }
+  }
+  .friday-scrolling button{
+    background-color: var(--bg-color-1);
+    color: #000;
+    height: 43px;
+    width: 130px;
+    margin-top: 20px;
+    z-index: +999;
+  }
+  .friday-scrolling button:hover{
+    background-color: #000;
+    color: var(--bg-color-1);
+  }
+  .blc-fri{
+    gap: 30px;
+  }
+/* 6. Black friday section ends */
+
+/* 7. Home banner section starts */
+.first-banner{
+    position: relative;
+    margin: 30px 0px;
+}
+.first-banner-content{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+.first-banner-content h3{
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 60px;
+}
+.first-banner-content button{
+    margin: 30px 0px;
+    padding: 7px 25px;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 400;
+}
+.first-banner-card{
+    position: relative;
+    margin: 30px 0 0px 0;
+}
+.first-banner-card img{
+    height: 210px;
+}
+.banner-card-content{
+    position: absolute; 
+    top: 85px;
+    left: 30px;
+}
+.banner-card-content a{
+    position: relative;
+}
+.banner-card-content a i{
+    padding-left: 10px;
+}
+.banner-card-content a::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--bg-color-3); 
+    bottom: -5px;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.4s;
+}
+.banner-card-content a:hover, .deal-link a:hover{
+    color: var(--bg-color-3);
+}
+.banner-card-content a:hover::before, .deal-link a:hover::before{
+    transform: scale(1);
+    transform-origin: top;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+/* 7. Home banner section ends */
+
+/* 8. Deals of the day section starts. */
+.deals-day{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+}
+.deal-link a i{
+    padding-left: 5px;
+}
+.deals-day a{
+    position: relative;
+}
+.deal-link a::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: var(--bg-color-3); 
+    bottom: -5px;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.4s;
+}
+.home-arrival-card{
+    position: relative;
+}
+.home-arrival-card img{
+    width: 100%;
+    height: 170px;
+}
+.home-card-content{
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    z-index: +99;
+}
+.home-card-content h5 {
+    padding: 10px 0;
+}
+.second-card-home, .second-card-home a{
+    color: #fff;
+}
+.slider-cards img{
+    height: 210px;
+    transition: all 0.3s ease-in-out;
+}
+.slider-cards{
+    background-color: #fff;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    border: 1px solid #fff;
+}
+.slider-cards:hover img{
+    transform: scale(1.1);
+}
+.slider-cards:hover{
+    border: 1px solid #000;
+}
+.slider-cards:hover .slider-cards-icon{
+    transform: translateX(0px);
+}
+.slider-content{
+    text-align: center;
+}
+.slider-content button{
+    padding: 6px 50px;
+    border: 1px solid #000;
+    background-color: transparent;
+    transition: all 0.4s ease-in-out;
+    border-radius: 3px;
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.slider-content button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.slider-cards-icon{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 16px;
+    position: absolute;
+    top: 30px;
+    right: 10px;
+    transform: translateX(50px);
+    transition: all 0.4s ;
+}
+.react-stars{
+    margin: 0 auto;
+}
+/* 8. Deals of the day section ends. */
+
+/* 9. Home electronics sections starts. */
+.home-electronics-card{
+    background-color: #fff;
+    padding: 15px 0 30px 0;
+}
+.home-electronics-card h5, .electronics-link a{
+    padding-left: 30px;
+}
+.electronics-link{
+    position: relative;
+}
+.electronics-link a i{
+    padding-left: 10px;
+}
+.electronics-link::after{
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    height: 3px;
+    background-color: var(--bg-color-3);
+    width: 40%;
+    left: 30px;
+    transform: scale(0);
+    transition: all 0.4s ease-in-out;
+}
+.electronics-link:hover::after{
+    transform: scale(1);
+}
+.electronics-links{
+    padding-left: 30px !important;
+}
+/* 9. Home electronics sections ends. */
+
+/* 10. Home final reduction cards section starts.  */
+.home-final-card img {
+    width: 100%;
+    height: 170px;
+}
+.home-final-card{
+    position: relative;
+}
+.home-final-content{
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+.home-final-content span{
+    padding-left: 5px;
+}
+.home-final-content h6{
+    padding-top: 10px;
+}
+.home-final-content h3{
+   position: relative;
+   padding-top: 10px;
+}
+.home-final-content h3::after{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    background-color: #000;
+    left: 0;
+    bottom: -9px;
+}
+.home-final-seccard{
+    color: #fff;
+}
+.home-final-seccard h3::after{
+    background-color: #fff;
+}
+/* 10. Home final reduction cards section ends.  */
+
+/* 11. Home- Off section starts. */
+.home-off-sec{
+    display: flex;
+    justify-content: end;
+    gap: 100px;
+    background-image: url("../assets/home-cards/long-banner.jpg");
+    padding: 30px 0;
+    align-items: center;
+}
+.home-off-sec-btn button{
+    padding: 6px 30px;
+    border: none;
+    box-shadow: 0px 0px 3px 0px;
+    background: #fff;
+    transition: all 0.3s ease-in-out;
+}
+.home-off-sec{
+    text-align: center;
+}
+.home-off-sec-btn button:hover{
+    background-color: #000;
+}
+.home-off-sec-btn button:hover a{
+    color: #fff;
+}
+/* 11. Home- Off section ends. */
+
+/* 12. Footer section starts. */
+.footer-sec{
+    background-color: #222935;
+    color: #AEB4BE;
+}
+.footer-sec img{
+    padding-bottom: 20px;
+}
+.footer-about h5{
+    color: #fff;
+    padding-bottom: 10px;
+}
+.footer-about li a{
+    color: #AEB4BE;
+}
+.footer-about li a:hover{
+    color: #fff;
+}
+.footer-about p{
+    padding: 5px 0;
+}
+.footer-about li a{
+    font-size: 14px;
+}
+/* 12. Footer section ends. */
+
+/* 13. Home login form section starts. */
+.home-login-form{
+    position: fixed;
+    z-index: +9999;
+    top: 0px;
+    left: 0;
+    background-color: #08080830;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden auto;
+}
+.home-login-form-sec{
+    background: #fff;
+    width: 35%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 8px;
+    position: relative;
+}
+.home-login-title{
+    padding-bottom: 10px;
+    text-align: center;
+}
+.home-form label{
+    font-size: 12px;
+    font-weight: 700;
+    padding: 10px 0;
+}
+.home-form button{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0px;
+    background-color: var(--bg-color-3);
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+}
+/* input[type="text"]:invalid{
+    border: 1px solid var(--bg-color-3);
+} */
+.login-form-btns button, .home-popup-from button{
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 5px 0;
+    border-radius: 8px;
+    color: #fff;
+    border: 1px solid var(--bg-color-4);
+}
+.fb-btn{
+    background-color: rgb(59,89,152);
+}
+.google-btn{
+    background-color: rgb(66,133,244);
+}
+.fb-btn i, .google-btn i{
+    padding-right: 10px;
+}
+.form-para p{
+    position: relative;
+    text-align: center;
+    font-size: 15px;
+}
+.form-para p::after{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 70px;
+    background-color: var(--bg-color-4);
+    right: 0;
+    right: 26%;
+    top: 12px;
+}
+.form-para p::before{
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 70px;
+    background-color: var(--bg-color-4);
+    left: 26%;
+    top: 12px;
+}
+.login-form-btns p{
+    text-align: center;
+    padding: 20px 0;
+}
+.login-form-btns span, .login-reset span{
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+.login-reset p{
+    text-align: center;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: var(--bg-color-2);
+}
+.pass-login{
+    position: relative;
+}
+.pass-login i{
+    position: absolute;
+    right: 20px;
+    top: 12px;
+}
+.login-remove i{
+    position: absolute;
+    right: -12px;
+    font-size: 17px;
+    border: 1px solid var(--bg-color-3);
+    padding: 8px 11px;
+    border-radius: 50%;
+    top: -15px;
+    background-color: var(--bg-color-3);
+    color: #fff;
+    cursor: pointer;
+}
+.login-remove i:hover{
+    background-color: var(--bg-color-2);
+    color: var(--bg-color-3);
+}
+.home-sign-in-form{
+    background-color: var(--bg-color-2);
+}
+.sign-in-checkbox{
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+.sign-in-checkbox input{
+    width: 20px;
+    height: 20px;
+}
+.sign-in-checkbox p a, .reset-pass p a{
+    border-bottom: 1px solid #000;
+}
+.pass-signin i{
+    top: 50px;
+}
+.reset-pass-form{
+    top: 20%;
+}
+/* 13. Home login form section ends. */
+
+/* 14. Home pop up section starts. */
+.home-pop-up{
+    background-image: url("../assets/banner-images/bg-1.png");
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding: 32px;
+    height: 550px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 10px;
+    width: 75% !important;
+    position: relative;
+}
+.home-pop-sec{
+    position: fixed;
+    z-index: +9999;
+    background-color: #08080830;
+    height: 100vh;
+    top: 0;
+}
+.home-popup-text{
+    text-align: center;
+    padding: 40px;
+}
+.home-popup-from button{
+    background-color: var(--bg-color-3);
+    margin: 10px 0;
+}
+.pop-social-media i{
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 5px;
+}
+.pop-social-media{
+    text-align: center;
+    padding: 20px 0;
+}
+.pop-social-media i:hover{
+    background-color: var(--bg-color-4);
+}
+.pop-up-check{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+.pop-up-check input{
+    width: 20px;
+    height: 20px;
+}
+/* 14. Home pop up section ends. */
+
+/* 15. back to top section starts. */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: var(--bg-color-3);
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 50%;
+    font-size: 16px;
+    cursor: pointer;
+  }
+/* 15. back to top section ends. */
+
+/* 16. Home cart section starts. */
+.home-cart-items{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: +9999;
+    background-color: #fff;
+    height: 100vh;
+    overflow: scroll;
+}
+.hone-cart-add p{
+    font-size: 17px;
+}
+.hone-cart-add i{
+    font-size: 19px;
+    padding: 6px 10px;
+    cursor: pointer;
+}
+.hone-cart-add i:hover{
+    background-color: var(--bg-color-4);
+    border-radius: 50%;
+}
+.hone-cart-add{
+    align-items: center;
+    border-bottom: 1px solid var(--bg-color-4);
+    padding-bottom: 10px;
+}
+.addtocart-empty{
+    text-align: center;
+    margin: 150px 0;
+}
+.addtocart-empty img{
+  width: 100%;
+}
+.home-cart-empty h6{
+    color: var(--bg-color-4);
+    padding-top: 20px;
+    font-size: 16px;
+}
+.addtocart-products img{
+    height: 100px;
+}
+.addtocart-buttons{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.addtocart-buttons button{
+    border-radius: 50%;
+    padding: 2px 8px;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--bg-color-3);
+    border: 1px solid var(--bg-color-3);
+    background-color: transparent;
+}
+.addtocart-sec{
+    padding: 20px 0;
+    border-bottom: 1px solid var(--bg-color-4);
+}
+.addtocart-checkbtns button{
+    width: 100%;
+    padding: 5px 0;
+    border: 1px solid var(--bg-color-3);
+    margin: 5px 0;
+    background-color: var(--bg-color-3);
+    color: #fff;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+.addtocart-checkbtns button:hover{
+    color: var(--bg-color-3);
+    background-color: #fff;
+   
+}
+.addtocart-title h6{
+    font-size: 14px;
+}
+/* 16. Home cart section ends. */
+
+/* 17.Home featured images section starts. */
+.featured-img img{
+    max-width: 110px;
+    height: 100%;
+    filter: grayscale(1);
+}
+.featured-img{
+    margin: 0 auto;
+}
+.featured-images{
+    background-color: #fff;
+}
+.featured h4{
+    padding-bottom: 20px;
+}
+/* 17.Home featured images section ends. */
+
+/* 18. Selected products section starts. */
+.products-buttons button{
+    border: 1px solid #000;
+    padding: 5px 20px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: 600;
+    transition: all 0.4s ease-in-out;
+}
+.products-buttons button:hover{
+    background-color: #000;
+    color: #fff;
+}
+.products-buttons{
+    gap: 5px;
+    align-items: center;
+    padding-bottom: 40px;
+}
+/* 18. Selected products section ends. */
+
+
+
+.items-cart{
+    background-color: #fff;
+    width: 300px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: +9999;
+}
+
+
+.warning{
+    position: fixed;
+    right: 20px;
+    bottom: 5%;
+    background-color: rgb(218, 91,91);
+    font-size: 18px;
+    color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    z-index: +99999;
+}
