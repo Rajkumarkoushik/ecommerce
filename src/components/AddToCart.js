@@ -24,20 +24,12 @@ function AddToCart({ setCartRemove, cartRemove, cartItems, setCartItems }) {
   return (
     <>
       {/* Add items section start. */}
-      <section
-        className="home-cart-items p-3"
-        style={{
-          transform: cartRemove ? "translateX(0%)" : "translateX(100%)",
-        }}
-      >
+      <section className="home-cart-items p-3" style={{ transform: cartRemove ? "translateX(0%)" : "translateX(100%)", }}>
         <div className="d-flex justify-content-between hone-cart-add">
           <p>
             <i className="fa-solid fa-bag-shopping"></i> 0 item
           </p>
-          <i
-            className="fa-sharp fa-solid fa-xmark"
-            onClick={() => setCartRemove(!cartRemove)}
-          ></i>
+          <i className="fa-sharp fa-solid fa-xmark" onClick={() => setCartRemove(!cartRemove)} ></i>
         </div>
         <div className="home-cart-empty">
           {cartItems.length === 0 ?  (<div className="addtocart-empty"> 
@@ -70,7 +62,7 @@ function AddToCart({ setCartRemove, cartRemove, cartItems, setCartItems }) {
             <button>Checkout Now${value}</button>
             <button>View Cart</button>
           </div>
-        </div>
+          </div>
       </section>
       {/* Add items section ends. */}
     </>

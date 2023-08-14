@@ -9,15 +9,6 @@ function Main({ carouselCards, cartRemove, setCartRemove, size, cartItems, setCa
   // const [click, setClick] = useState(false);
   // const [resetPass, setResetPass] = useState(false);
   const [popUpForm, setPopUpForm] = useState(false);
-  // Input field border color change starts.
-  const [changeColor, setChangeColor] = useState(false);
-  function borderColorFocus() {
-    setChangeColor(true);
-  }
-  function borderColorBlur() {
-    setChangeColor(false);
-  }
-  // Input field border color change ends.
 
   const [password, setPassword] = useState(false);
   const [loginForm, setloginForm] = useState(false);
@@ -93,7 +84,8 @@ function Main({ carouselCards, cartRemove, setCartRemove, size, cartItems, setCa
       {/* Main nav section starts */}
       <nav className="container-fluid pt20 navigation">
         <div className="container">
-          <div className="d-flex align-items-center justify-content-between">
+          <div className="hide-nav">
+            <div className="d-flex align-items-center justify-content-between">
             <div>
               <NavLink to="/">
                 <img src=".\assets\logo\logo.svg" alt="" />
@@ -151,7 +143,23 @@ function Main({ carouselCards, cartRemove, setCartRemove, size, cartItems, setCa
               ></i>
               <span>{size}</span>
             </div>
+            </div>
           </div>
+          <section className="response-nav-section">
+            <div className="d-flex justify-content-between align-items-center">
+              <div>
+                <i className="fa-solid fa-bars nav-hamburger"></i>
+              </div>
+              <div>
+                <img src=".\assets\logo\bazaar-black-sm.svg" alt="Website logo" />
+              </div>
+              <div className="nav-response-icons">
+                <i className="fa-solid fa-magnifying-glass"></i>
+                <i className="fa-solid fa-user"  onClick={() => setloginForm(!loginForm)}></i>
+                <i className="fa-solid fa-bag-shopping"  onClick={() => setCartRemove(!cartRemove)}></i>
+              </div>
+            </div>
+          </section>
         </div>
       </nav>
       {/* Main nav section ends */}
@@ -175,11 +183,10 @@ function Main({ carouselCards, cartRemove, setCartRemove, size, cartItems, setCa
                 >
                   <li>
                     <a href="/">
-                      {" "}
                       <img
                         src=".\assets\categories-list\dress.png"
                         alt=""
-                      />{" "}
+                      />
                       Fashion
                     </a>
                   </li>
@@ -496,11 +503,6 @@ function Main({ carouselCards, cartRemove, setCartRemove, size, cartItems, setCa
             <input
               type="text"
               placeholder="example@gmail.com"
-              style={{
-                border: changeColor ? "2px solid red" : "1px solid #bfc3ca",
-              }}
-              onFocus={borderColorFocus}
-              onBlur={borderColorBlur}
               required
             />
             <label htmlFor="text">Password</label> <br />
@@ -508,7 +510,7 @@ function Main({ carouselCards, cartRemove, setCartRemove, size, cartItems, setCa
               <input
                 type={password ? "text" : "password"}
                 placeholder="*********"
-                required
+                required 
               />
               <span onClick={() => setPassword(!password)}>
                 {password ? (
@@ -544,6 +546,7 @@ function Main({ carouselCards, cartRemove, setCartRemove, size, cartItems, setCa
         </div>
       </section>
       {/* Login form section ends. */}
+      
     </>
   );
 }

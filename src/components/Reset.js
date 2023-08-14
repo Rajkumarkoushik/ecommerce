@@ -16,7 +16,7 @@ function Reset() {
                         </div>
                         <form className="home-form">
                             <label htmlFor="text">Email</label> <br />
-                            <input type="text" placeholder="Email" required/>                             
+                            <input type="email" placeholder="Email" required/>                             
                             <button>Reset</button>
                         </form>   
                         <div className="login-reset reset-pass">

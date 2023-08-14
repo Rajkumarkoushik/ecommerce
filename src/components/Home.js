@@ -5,8 +5,10 @@ import Carousel from 'react-bootstrap/Carousel';
 import Slider from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import ReactStars from "react-rating-stars-component";
+import PopUp from "./PopUp";
 
-function Home({setCartItems, cartItems, addItemsToCart}) {
+
+function Home({setCartItems, cartItems, addItemsToCart, ToastContainer, items}) {
   // const [cart, setCart] = useState([]);
   const electronicsItems = ["Wireless Speaker", "Tablet", "Smartphone", "Laptop", "iMac", "Game Controller", "Drone", "Apple"];
   
@@ -84,10 +86,28 @@ function Home({setCartItems, cartItems, addItemsToCart}) {
       ]
     // Items cards section ends.
 
+  // Popup section starts
+  const [popupCard, setPopupCard] = useState(false);
+  // Popup section ends
   // Add items to carts ends.
+
+
   return (
     <>
       {/* <Main/> */}
+      {/* Tostify starts */}
+      <ToastContainer
+        position="bottom-right"
+        autoClose={1500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
+      {/* tostify ends */}
           {/* Banner section starts */}
             <section className="container">
               <div className="row">
@@ -227,7 +247,7 @@ function Home({setCartItems, cartItems, addItemsToCart}) {
                               <button onClick={() => addItemsToCart(items)}>Add To Cart</button>     
                                 <div className="slider-cards-icon">
                                   <i className="fa-regular fa-heart"></i>
-                                  <i className="fa-sharp fa-regular fa-eye"></i>
+                                  <i className="fa-sharp fa-regular fa-eye" onClick={() => setPopupCard(!popupCard)}></i>
                                 </div>
                             </div>
                           </div>
@@ -295,11 +315,14 @@ function Home({setCartItems, cartItems, addItemsToCart}) {
                             <img src={items.image} alt="" />
                             <div className="slider-content">
                                 <p>{items.name}</p>
-                                <h6>{items.price}</h6>
+                              <h6>{items.price}</h6>
+                              <div className="react-stars">
+                                <ReactStars  count={5} size={16} activeColor="#ffd700" value={3} edit={false} />
+                              </div>
                                 <button onClick={() => addItemsToCart(items)}>Add To Cart</button>
                                 <div className="slider-cards-icon">
                                   <i className="fa-regular fa-heart"></i>
-                                  <i className="fa-sharp fa-regular fa-eye"></i>
+                                  <i className="fa-sharp fa-regular fa-eye" onClick={() => setPopupCard(!popupCard)}></i>
                                 </div>
                             </div>
                           </div>
@@ -354,11 +377,14 @@ function Home({setCartItems, cartItems, addItemsToCart}) {
                             <img src={items.image} alt="" />
                             <div className="slider-content">
                                 <p>{items.name}</p>
-                                <h6>{items.price}</h6>
+                              <h6>{items.price}</h6>
+                              <div className="react-stars">
+                                <ReactStars  count={5} size={16} activeColor="#ffd700" value={3} edit={false} />
+                              </div>
                                 <button onClick={() => addItemsToCart(items)}>Add To Cart</button>
                                 <div className="slider-cards-icon">
                                   <i className="fa-regular fa-heart"></i>
-                                  <i className="fa-sharp fa-regular fa-eye"></i>
+                                  <i className="fa-sharp fa-regular fa-eye" onClick={() => setPopupCard(!popupCard)}></i>
                                 </div>
                             </div>
                           </div>
@@ -382,7 +408,6 @@ function Home({setCartItems, cartItems, addItemsToCart}) {
             </section>
           {/* Home - Off section Ends. */}
       
-      
           {/* Home - Women's fashion Carousels section starts. */}
             <section className="container pt50 pb50">
               <div className="row">
@@ -404,10 +429,13 @@ function Home({setCartItems, cartItems, addItemsToCart}) {
                             <div className="slider-content">
                                 <p>{items.name}</p>
                                 <h6>{items.price}</h6>
+                                <div className="react-stars">
+                                  <ReactStars  count={5} size={16} activeColor="#ffd700" value={3} edit={false} />
+                                </div>
                                 <button onClick={() => addItemsToCart(items)}>Add To Cart</button>
                                 <div className="slider-cards-icon">
                                   <i className="fa-regular fa-heart"></i>
-                                  <i className="fa-sharp fa-regular fa-eye"></i>
+                                  <i className="fa-sharp fa-regular fa-eye" onClick={() => setPopupCard(!popupCard)}></i>
                                 </div>
                             </div>
                           </div>
@@ -440,8 +468,7 @@ function Home({setCartItems, cartItems, addItemsToCart}) {
                       <img src=".\assets\featured-brands\samsung.png" alt="" />
                   </div>
               </div>
-            </section>
-                
+            </section>       
           {/* Featured brands section ends. */}
       
           {/* Selected products section starts */}
@@ -466,10 +493,13 @@ function Home({setCartItems, cartItems, addItemsToCart}) {
                             <div className="slider-content">
                                 <p>{items.name}</p>
                                 <h6>{items.price}</h6>
+                                <div className="react-stars">
+                                  <ReactStars  count={5} size={16} activeColor="#ffd700" value={3} edit={false} />
+                                </div>
                                 <button onClick={() => addItemsToCart(items)}>Add To Cart</button>
                                 <div className="slider-cards-icon">
                                   <i className="fa-regular fa-heart"></i>
-                                  <i className="fa-sharp fa-regular fa-eye"></i>
+                                  <i className="fa-sharp fa-regular fa-eye" onClick={() => setPopupCard(!popupCard)}></i>
                                 </div>
                             </div>
                           </div>
@@ -478,6 +508,10 @@ function Home({setCartItems, cartItems, addItemsToCart}) {
                     </Slider>
             </section>
           {/* Selected products section ends */}
+      
+          {/* Pop up section starts. */}
+      <PopUp popupCard={popupCard} setPopupCard={setPopupCard} cartItems={cartItems} addItemsToCart={addItemsToCart} items={items} />
+          {/* Pop up section ends. */}
          
       </>
   )

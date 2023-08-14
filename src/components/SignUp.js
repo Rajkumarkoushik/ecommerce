@@ -10,7 +10,7 @@ function SignUp() {
                 <section className="home-login-form home-sign-in-form">
                     <div className="home-login-form-sec">
                         <div className="login-remove">
-                            <Link to="/"><i class="fa-sharp fa-solid fa-xmark"></i></Link>
+                            <Link to="/"><i className="fa-sharp fa-solid fa-xmark"></i></Link>
                         </div>
                                 <div className="home-login-title">
                                 <img src=".\assets\logo\logo.svg" alt="" />

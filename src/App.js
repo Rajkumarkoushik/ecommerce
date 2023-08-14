@@ -11,6 +11,8 @@ import SignUp from './components/SignUp';
 import Reset from './components/Reset';
 import NotFound from './components/NotFound';
 import Footer from './components/Footer';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function App() {
@@ -19,9 +21,12 @@ function App() {
     const [cartRemove, setCartRemove] = useState(false);
     const [cartItems, setCartItems] = useState([]);
     const [warning, setWarning] = useState(false);
+  const [visibleItems, setVisibleItems] = useState(false);
+  const [showItems, setShowItems] = useState([]);
   
     // Add items to carts starts.
-    const addItemsToCart = (item) => {
+  const addItemsToCart = (item) => {
+      toast.success('Added To Cart');
       let isPresent = false;
       cartItems.forEach((product) => {
         if (item.id === product.id)
@@ -36,13 +41,13 @@ function App() {
       }
       setCartItems([...cartItems, item]);
     }
-  
+
   return (
     <>
       <BrowserRouter>
         <NavBar cartRemove={cartRemove} setCartRemove={setCartRemove} cartItems={cartItems} size={cartItems.length} setCartItems={setCartItems} />
         <Routes>
-          <Route path="/" element={<Home cartItems={cartItems} setCartItems={setCartItems} addItemsToCart={addItemsToCart} />}/>
+          <Route path="/" element={<Home cartItems={cartItems} setCartItems={setCartItems} addItemsToCart={addItemsToCart} ToastContainer={ToastContainer}/>}/>
           <Route path="megamenu" element={<MegaMenu/>}/>
           <Route path="full" element={<FullScreen/>}/>
           <Route path="pages" element={<Pages/>}/>
@@ -52,9 +57,9 @@ function App() {
           <Route path="reset" element={<Reset/>}/>
           <Route path="*" element={<NotFound />} />
         </Routes>
-        {
+        {/* {
         warning && <h4 className='warning'>Added to cart</h4>
-      }
+      } */}
         <Footer />
       </BrowserRouter>
     </>
